@@ -15,6 +15,6 @@
 <style>
 	/*每个页面公共css */
 	pages{
-		font-size: 28rpx;
+		font-size: 28rpx;		background-color: #F8F6F9;
 	}
 </style>
