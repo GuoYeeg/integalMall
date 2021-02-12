@@ -14,4 +14,7 @@
 
 
 /*每个页面公共css */
+pages{
+	font-size: 28rpx;
+}
 
