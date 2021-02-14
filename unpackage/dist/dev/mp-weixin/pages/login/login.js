@@ -239,14 +239,13 @@ var _fetch = __webpack_require__(/*! ../../request/fetch.js */ 20);function _int
                     //跳回登录前的页面
                     setTimeout(function () {
                       // uni.navigateBack()
-                      uni.switchTab({
-                        url: "pages/index/index" });
+                      uni.navigateTo({
+                        url: "/pages/index/index",
+                        success: function success(res) {return console.log(res);},
+                        fail: function fail(err) {return console.log(err);} });
 
-
-                      console.log(1111);
                     }, 1000);
                   }
-
                 });case 14:case "end":return _context2.stop();}}}, _callee2);}))();
 
     } } };exports.default = _default;
