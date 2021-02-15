@@ -61,9 +61,17 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.homePage .banner .banner_in .banner_in_hearder .banner_in_hearder_l image {
-  width: 48rpx;
+.homePage .banner .banner_in .banner_in_hearder .banner_in_hearder_l .avatar {
+  width: 50rpx;
+  height: 50rpx;
   margin: 10rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50rpx;
+}
+.homePage .banner .banner_in .banner_in_hearder .banner_in_hearder_l image {
+  width: 50rpx;
 }
 .homePage .banner .banner_in .banner_in_hearder .banner_in_hearder_r {
   box-sizing: border-box;
@@ -89,6 +97,16 @@
   border-radius: 50%;
   background-color: #FD604D;
   font-size: 18rpx;
+}
+.homePage .banner .banner_in .banner_in_hearder .banner_in_hearder_r .banner_in_hearder_r_btn {
+  width: 80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #0C3CA9;
+  font-size: 28rpx;
+  border-radius: 30rpx;
 }
 .homePage .banner .banner_in .banner_in_total {
   text-align: center;
@@ -191,11 +209,6 @@
   height: 429rpx;
   padding: 0 35rpx;
 }
-.homePage .products image {
-  width: 214rpx;
-  height: 87;
-  margin-bottom: 20rpx;
-}
 .homePage .products .products_banner {
   width: 680rpx;
   display: block;
@@ -214,6 +227,10 @@
   background-color: #FFFFFF;
   position: relative;
 }
+.homePage .products .products_box image {
+  width: 214rpx;
+  margin-bottom: 20rpx;
+}
 .homePage .products .products_box .products_box_tips {
   position: absolute;
   top: 0;
@@ -222,6 +239,10 @@
 }
 .homePage .products .products_box .products_box_title {
   margin-bottom: 20rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .homePage .products .products_box .products_box_coin {
   margin-bottom: 14rpx;
@@ -231,12 +252,12 @@
 }
 .homePage .products .products_box .products_box_btn {
   width: 140rpx;
-  height: 45rpx;
+  height: 65rpx;
   font-size: 22rpx;
   border: 1rpx solid #0B338E;
   color: #0B338E;
   padding: 0;
-  line-height: 45rpx;
+  line-height: 65rpx;
   box-sizing: border-box;
 }
 .homePage .ad {

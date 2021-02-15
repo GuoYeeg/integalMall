@@ -23,7 +23,7 @@ function LoginFn(params) {
     },
     method: 'POST'
   })
-}function getSMS(params) {
+}//获取验证码function getSMS(params) {
   return request.requestApi({
     url: api.smsApi,
     data: params,
@@ -32,7 +32,7 @@ function LoginFn(params) {
     },
     method: 'POST'
   })
-}
+}//登录
 function loginFn(params) {
   return request.requestApi({
     url: api.loginApi,
@@ -42,9 +42,22 @@ function loginFn(params) {
     },
     method: 'POST'
   })
-}
+}//获取用户信息function getuserInfo(params) {
+  return request.requestApi({
+    url: api.userInfoApi,
+    data: params,
+  })
+}//获取精品推荐数据function getgoodsRecommand() {
+  return request.requestApi({
+    url: api.goodsRecommendApi,
+  })
+}//获取热门兑换function getgoodsHot() {
+  return request.requestApi({
+    url: api.goodsHotApi,
+  })
+}
 module.exports = {
   getHome: getHome,
   LoginFn: LoginFn,
-  getList: getList,	getSMS,	loginFn
+  getList: getList,	getSMS,	loginFn,	getuserInfo,	getgoodsRecommand,	getgoodsHot,
 }
